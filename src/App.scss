@@ -1,0 +1,21 @@
+// Variables
+$background-dark: url('static/img/splash_screen/background.png');
+$background-light: #FFFFFF;
+
+$primary-color-dark: #0B1E2D;
+$secondary-color-light: #152A3A;
+$primary-font-color-dark: #FFFFFF;
+$secondary-font-color-dark: #5B6975;
+
+.App {
+}
+
+.Dark {
+  background: $background-dark;
+}
+
+.Light {
+  background: $background-light;
+}
+
+@import "scss/SplashScreen";

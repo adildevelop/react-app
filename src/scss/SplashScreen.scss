@@ -1,0 +1,21 @@
+.SplashScreen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  img:first-child {
+    margin-bottom: -30px;
+  }
+
+  img:nth-child(2) {
+    margin-bottom: -50px;
+  }
+}
