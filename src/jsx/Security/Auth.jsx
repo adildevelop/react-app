@@ -1,3 +1,8 @@
+import rick from "../../static/img/splash_screen/rick.png"
+import and from "../../static/img/splash_screen/and.png"
+import morty from "../../static/img/splash_screen/morty.png"
+import auth from "../../static/img/security/auth.svg"
+import pass from "../../static/img/security/pass.svg"
 import InputType from "../FormTypes/InputType";
 import SubmitType from "../FormTypes/SubmitType";
 import wretch from "wretch";
@@ -34,17 +39,20 @@ function Auth(props) {
     return (
         <div className="Auth">
             <div className="AuthContainer">
-                <h1 className="AuthHeader">Вход</h1>
+                <div className="AuthImage">
+                    <img src={rick} alt="Rick" />
+                    <img src={and} alt="And" />
+                    <img src={morty} alt="Morty" />
+                </div>
                 <form className="AuthForm" onSubmit={handleSubmit}>
-                    <InputType name="login" placeholder="Логин" type="text" />
-                    <InputType name="password" placeholder="Пароль" type="password" />
-
-                    <div className="AuthNoAccountContainer">
-                        <Link to="/register" className="AuthNoAccount">Нет аккаунта? Зарегистрируйтесь</Link>
-                    </div>
-
+                    <InputType icon={auth} name="login" placeholder="Логин" type="text" />
+                    <InputType icon={pass} name="password" placeholder="Пароль" type="password" />
                     <SubmitType value="Войти"/>
                 </form>
+                <div className="AuthNoAccountContainer">
+                    У вас еще нет аккаунта?
+                    <Link to="/register" className="AuthNoAccount">Создать</Link>
+                </div>
             </div>
         </div>
     )

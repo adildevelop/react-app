@@ -1,9 +1,14 @@
 .SubmitType {
   margin: 7px 0;
-  height: 40px;
-  width: 150px;
-  border-radius: 50px;
+  height: 48px;
+  width: calc(100% - 56px);
+  max-width: 500px;
+  border-radius: 12px;
   border: none;
-  background-color: $secondary-color-dark;
+  background-color: #22A2BD;
   color: $primary-font-color-dark;
+  font-size: $font-size-16;
+  font-weight: $secondary-font-weight;
+  line-height: $primary-line-height;
+  letter-spacing: .15px;
 }

@@ -1,12 +1,50 @@
-.InputType {
-  margin: 7px 0;
-  height: 40px;
-  width: 280px;
-  border-radius: 100px;
-  color: $primary-font-color-dark;
-  font-size: $font-size-16;
-  border: none;
-  outline: none;
-  background-color: $secondary-color-dark;
-  text-align: center;
+.InputTypeContainer {
+  width: calc(100% - 56px);
+  max-width: 500px;
+
+  .InputTypeLabel {
+    color: $primary-font-color-dark;
+    font-size: $font-size-14;
+    font-weight: $secondary-font-weight;
+    line-height: 20px;
+    letter-spacing: .25px;
+  }
+
+  .InputTypeWrapper {
+    display: flex;
+    margin: 10px 0;
+    height: 48px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: $secondary-color-dark;
+
+    .InputTypeIconWrapper {
+      min-width: 70px;
+      position: relative;
+
+      .InputTypeIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .InputType {
+      width: 100%;
+      color: $primary-font-color-dark;
+      letter-spacing: .5px;
+      font-size: $font-size-16;
+      font-weight: $secondary-font-weight;
+      border: none;
+      outline: none;
+      background-color: $secondary-color-dark;
+      border-radius: 12px;
+
+      &::placeholder {
+        letter-spacing: .5px;
+        color: $secondary-font-color-dark;
+      }
+    }
+  }
 }

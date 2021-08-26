@@ -9,11 +9,28 @@
     align-items: center;
     flex-direction: column;
 
-    .AuthHeader {
-      color: $primary-font-color-dark;
+    .AuthImage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+      }
+
+      img:first-child {
+        margin-bottom: calc(5% - 40px);
+      }
+
+      img:nth-child(2) {
+        margin-bottom: calc(2% - 60px);
+      }
     }
 
     .AuthForm {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -21,13 +38,25 @@
     }
 
     .AuthNoAccountContainer {
-      margin: 5px 0 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 17px 0 15px;
       width: 100%;
+      color: $secondary-font-color-dark;
+      font-size: $font-size-14;
+      font-weight: $secondary-font-weight;
+      line-height: 20px;
+      letter-spacing: .25px;
 
       .AuthNoAccount {
+        margin-left: 10px;
         text-decoration: none;
-        color: $primary-font-color-dark;
-        font-size: $font-size-10;
+        font-size: $font-size-14;
+        font-weight: $secondary-font-weight;
+        line-height: 20px;
+        letter-spacing: .25px;
+        color: #43D049;
       }
     }
   }
