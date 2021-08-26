@@ -1,10 +1,10 @@
 $font-family: Roboto;
-$font-size: 14px;
+$font-size-10: 10px;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
 $primary-font-weight: 500;
 $secondary-font-weight: 400;
-
-$primary-font-color-dark: #FFFFFF;
-$secondary-font-color-dark: #5B6975;
 
 $font-color-alive: #43D049;
 $font-color-dead: #EB5757;
@@ -13,6 +13,12 @@ $status-font-color: #6E798C;
 $primary-line-height: 24px;
 $secondary-line-height: 16px;
 
-
 $primary-color-dark: #0B1E2D;
 $secondary-color-dark: #152A3A;
+$primary-font-color-dark: #FFFFFF;
+$secondary-font-color-dark: #5B6975;
+
+$primary-color-light: #FFFFFF;
+$secondary-color-light: #F2F2F2;
+$primary-font-color-light: #0B1E2D;
+$secondary-font-color-light: #828282;

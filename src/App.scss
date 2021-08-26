@@ -1,12 +1,28 @@
 @import "scss/Variables";
-@import "scss/Theme";
 
-@import "scss/SplashScreen";
+// Custom Form Types
+@import "scss/FormTypes/InputType";
+@import "scss/FormTypes/SubmitType";
+
+// Security
+@import "scss/Security/Auth";
+@import "scss/Security/Register";
+
+// Start Screen
+@import "scss/SplashScreen/SplashScreen";
+
+// Components
+@import "scss/Components/SearchBar";
+@import "scss/Components/Navigation";
+
+// Characters List
+@import "scss/CharacterList/CharacterList";
+@import "scss/CharacterList/CharacterItem";
+
 @import "scss/Main";
-@import "scss/SearchBar";
 
 .App {
   font-family: $font-family;
-  font-size: $font-size;
+  font-size: $font-size-16;
   font-weight: $primary-font-weight;
 }

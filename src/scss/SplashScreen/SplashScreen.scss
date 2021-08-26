@@ -1,0 +1,34 @@
+.SplashScreen {
+  height: 100vh;
+  background: url('../../static/img/splash_screen/background.png');
+
+  &.Expired {
+    display: none;
+  }
+
+  .SplashScreenContainer {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    min-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      width: auto;
+    }
+
+    img:first-child {
+      margin-bottom: calc(5% - 40px);
+    }
+
+    img:nth-child(2) {
+      margin-bottom: calc(2% - 40px);
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.CharacterItem {
+  margin: 24px 0;
+  display: flex;
+
+  &.Grid {
+    min-width: 40%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CharacterImage {
+    img {
+      object-fit: cover;
+      object-position: 50% 5%;
+      border-radius: 50%;
+    }
+
+    &.List {
+      width: 74px;
+      height: 74px;
+
+      img {
+        width: 74px;
+        height: 74px;
+      }
+    }
+
+    &.Grid {
+      width: 120px;
+      height: 120px;
+
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
+  .CharacterInfo {
+    display: flex;
+    flex-direction: column;
+
+    &.List {
+      margin-left: 18px;
+      justify-content: center;
+    }
+
+    &.Grid {
+      margin-top: 18px;
+      align-items: center;
+    }
+
+    .CharacterStatus {
+      font-size: $font-size-10;
+      line-height: $secondary-line-height;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+
+      &.Alive {
+        color: $font-color-alive;
+      }
+
+      &.Dead {
+        color: $font-color-dead;
+      }
+
+      &.Unknown {
+        color: $status-font-color;
+      }
+    }
+
+    .CharacterName {
+      color: $primary-font-color-dark;
+      font-size: $font-size-16;
+      line-height: $primary-line-height;
+      letter-spacing: .5px;
+
+      &.Light {
+        color: $primary-font-color-light;
+      }
+    }
+
+    .CharacterGender {
+      color: $status-font-color;
+      font-weight: $secondary-font-weight;
+      font-size: $font-size-12;
+      line-height: $secondary-line-height;
+      letter-spacing: .5px;
+
+      &.Light {
+        color: $secondary-font-color-light;
+      }
+    }
+  }
+}

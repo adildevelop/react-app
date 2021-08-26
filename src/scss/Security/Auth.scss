@@ -1,0 +1,34 @@
+.Auth {
+  height: 100vh;
+  background-color: $primary-color-dark;
+
+  .AuthContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .AuthHeader {
+      color: $primary-font-color-dark;
+    }
+
+    .AuthForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .AuthNoAccountContainer {
+      margin: 5px 0 15px;
+      width: 100%;
+
+      .AuthNoAccount {
+        text-decoration: none;
+        color: $primary-font-color-dark;
+        font-size: $font-size-10;
+      }
+    }
+  }
+}

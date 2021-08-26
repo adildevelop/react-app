@@ -1,0 +1,34 @@
+.Register {
+  height: 100vh;
+  background-color: $primary-color-dark;
+
+  .RegisterContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .RegisterHeader {
+      color: $primary-font-color-dark;
+    }
+
+    .RegisterForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .RegisterHasAccountContainer {
+        margin: 5px 0 15px;
+        width: 100%;
+
+        .RegisterHasAccount {
+          text-decoration: none;
+          color: $primary-font-color-dark;
+          font-size: $font-size-10;
+        }
+      }
+    }
+  }
+}

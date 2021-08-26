@@ -2,9 +2,14 @@
   display: flex;
   align-items: center;
   margin: 24px 16px;
+  width: calc(100% - 32px);
   height: 48px;
   border-radius: 100px;
   background: $secondary-color-dark;
+
+  &.Light {
+    background: $secondary-color-light;
+  }
 
   button {
     height: 24px;
@@ -14,12 +19,12 @@
 
   .SearchButton {
     margin: 12px 10px 12px 15px;
-    background: url('../static/img/search_bar/search.svg');
+    background: url('../../static/img/search_bar/search.svg');
   }
 
   .SearchFilter {
     margin: 12px 15px 12px auto;
-    background: url('../static/img/search_bar/filter.svg');
+    background: url('../../static/img/search_bar/filter.svg');
   }
 
   .SearchInput {
@@ -28,5 +33,18 @@
     color: $secondary-font-color-dark;
     background: none;
     border: none;
+    outline: none;
+
+    &::placeholder {
+      color: $secondary-font-color-dark;
+    }
+
+    &.Light {
+      color: $secondary-font-color-light;
+
+      &::placeholder {
+        color: $secondary-font-color-light;
+      }
+    }
   }
 }

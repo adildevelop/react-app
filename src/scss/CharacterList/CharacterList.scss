@@ -1,0 +1,53 @@
+.CharacterList {
+  width: calc(100% - 32px);
+
+  .CharacterListHeader {
+    margin-bottom: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .CharacterListTotal {
+      font-size: $font-size-10;
+      color: $secondary-font-color-dark;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+
+      &.Light {
+        color: $secondary-font-color-light;
+      }
+    }
+
+    .CharacterListLayout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+      width: 24px;
+      height: 24px;
+      border: none;
+      background-color: $primary-color-dark;
+
+      &.Light {
+        background-color: $primary-color-light;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .CharacterItemContainer {
+    margin-bottom: 80px;
+
+    &.Grid {
+      max-width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+}
