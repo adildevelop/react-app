@@ -6,7 +6,6 @@ import InputType from "../FormTypes/InputType";
 import SubmitType from "../FormTypes/SubmitType";
 import wretch from "wretch"
 import {Link, useHistory} from "react-router-dom";
-import {useState} from "react";
 
 function Register(props) {
     let history = useHistory();

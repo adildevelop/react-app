@@ -19,7 +19,14 @@
 @import "scss/CharacterList/CharacterList";
 @import "scss/CharacterList/CharacterItem";
 
+// SettingsWindow
+@import "scss/Settings/SettingsWindows";
+
 @import "scss/Characters";
+@import "scss/Locations";
+@import "scss/Episodes";
+@import "scss/Settings";
+
 
 .App {
   font-family: $font-family;
