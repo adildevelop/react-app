@@ -7,9 +7,12 @@ function SearchBar(props) {
 
     return (
         <div className={"SearchBar " + applyTheme()}>
-            <button className="SearchButton"></button>
-            <input className={"SearchInput " + applyTheme()} type="text" placeholder="Найти персонажа"/>
-            <button className="SearchFilter"></button>
+            <button className="SearchButton" />
+            <input className={"SearchInput " + applyTheme()} type="text" placeholder="Найти персонажа" />
+            <div className="SearchFilterWrapper">
+                <div className={"SearchBar " + applyTheme()} />
+                <button className="SearchFilter" />
+            </div>
         </div>
     )
 }
