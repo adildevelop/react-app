@@ -8,9 +8,14 @@
     font-weight: $secondary-font-weight;
     line-height: 20px;
     letter-spacing: .25px;
+
+    &.Light {
+      color: $primary-font-color-light;
+    }
   }
 
   .InputTypeWrapper {
+    position: relative;
     display: flex;
     margin: 10px 0;
     height: 48px;
@@ -18,19 +23,30 @@
     border-radius: 12px;
     background-color: $secondary-color-dark;
 
-    .InputTypeIconWrapper {
-      min-width: 70px;
-      position: relative;
+    &.Light {
+      background-color: $secondary-color-light;
+    }
 
-      .InputTypeIcon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .InputTypeIcon {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      & + .InputType {
+        margin-left: 50px;
       }
     }
 
+    .InputTypePassIcon {
+      position: absolute;
+      right: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
     .InputType {
+      margin-left: 10px;
       width: 100%;
       color: $primary-font-color-dark;
       letter-spacing: .5px;
@@ -38,8 +54,12 @@
       font-weight: $secondary-font-weight;
       border: none;
       outline: none;
-      background-color: $secondary-color-dark;
+      background: none;
       border-radius: 12px;
+
+      &.Light {
+        color: $primary-font-color-light;
+      }
 
       &::placeholder {
         letter-spacing: .5px;

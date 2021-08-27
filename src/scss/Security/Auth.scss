@@ -2,6 +2,10 @@
   height: 100vh;
   background-color: $primary-color-dark;
 
+  &.Light {
+    background-color: $primary-color-light;
+  }
+
   .AuthContainer {
     height: 100%;
     display: flex;
@@ -57,6 +61,82 @@
         line-height: 20px;
         letter-spacing: .25px;
         color: #43D049;
+      }
+    }
+  }
+
+  .AuthErrorWrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &.Active {
+      display: flex;
+    }
+
+    .AuthErrorBackground {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 30%;
+      z-index: 100;
+    }
+
+    .AuthError {
+      padding: 30px;
+      width: 250px;
+      height: 128px;
+      background-color: $secondary-color-dark;
+      border-radius: 12px;
+      z-index: 9999;
+
+      &.Light {
+        background-color: $primary-color-light;
+      }
+
+      h3 {
+        margin: 0 0 20px 0;
+        font-size: 20px;
+        line-height: $primary-line-height;
+        font-weight: $primary-font-weight;
+        color: $primary-font-color-dark;
+        letter-spacing: .15px;
+
+        &.Light {
+          color: $primary-font-color-light;
+        }
+      }
+
+      p {
+        margin: 0 0 24px 0;
+        font-size: $font-size-14;
+        font-weight: $secondary-font-weight;
+        line-height: 20px;
+        color: $primary-font-color-dark;
+        letter-spacing: .25px;
+
+        &.Light {
+          color: $primary-font-color-light;
+        }
+      }
+
+      button {
+        height: 40px;
+        width: 100%;
+        background: none;
+        color: #22A2BD;
+        border: 1px solid #22A2BD;
+        border-radius: 12px;
+        outline: none;
+
+        &:active {
+          background: #22A2BD;
+          color: $primary-font-color-dark;
+        }
       }
     }
   }

@@ -2,7 +2,7 @@ import SearchBar from "./Components/SearchBar";
 import CharacterList from "./CharacterList/CharacterList";
 import Navigation from "./Components/Navigation";
 
-function Main(props) {
+function Characters(props) {
     function applyTheme() {
         if (props.theme === "Light") return "Light";
 
@@ -10,7 +10,7 @@ function Main(props) {
     }
 
     return (
-        <div className={"Main " + applyTheme()}>
+        <div className={"Characters " + applyTheme()}>
             <SearchBar theme={props.theme} />
             <CharacterList theme={props.theme} />
             <Navigation theme={props.theme} />
@@ -18,4 +18,4 @@ function Main(props) {
     )
 }
 
-export default Main;
+export default Characters;

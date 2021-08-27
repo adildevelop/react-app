@@ -2,6 +2,10 @@
   height: 100vh;
   background-color: $primary-color-dark;
 
+  &.Light {
+    background-color: $primary-color-light;
+  }
+
   .RegisterContainer {
     height: 100%;
     display: flex;
@@ -9,24 +13,36 @@
     align-items: center;
     flex-direction: column;
 
+    .RegisterBack {
+      width: calc(100% - 56px);
+      max-width: 500px;
+    }
+
     .RegisterHeader {
+      width: calc(100% - 56px);
+      max-width: 500px;
       color: $primary-font-color-dark;
+
+      &.Light {
+        color: $primary-font-color-light;
+      }
     }
 
     .RegisterForm {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
 
-      .RegisterHasAccountContainer {
-        margin: 5px 0 15px;
-        width: 100%;
+      .RegisterFormBreaker {
+        margin: 36px 0;
+        width: calc(100% - 56px);
+        max-width: 500px;
+        border: 2px solid rgba(21, 42, 58, 0.5);
 
-        .RegisterHasAccount {
-          text-decoration: none;
-          color: $primary-font-color-dark;
-          font-size: $font-size-10;
+        &.Light {
+          border: 2px solid #F2F2F2;
         }
       }
     }

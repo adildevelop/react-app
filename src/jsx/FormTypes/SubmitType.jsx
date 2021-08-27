@@ -1,10 +1,13 @@
 function SubmitType(props) {
     return (
-        <input
-            className={props.classes ? "SubmitType" + props.classes : "SubmitType"}
-            type="submit"
-            value={props.value ? props.value : "Отправить"}
-        />
+        <div className="SubmitTypeWrapper">
+            <input
+                className={props.classes ? "SubmitType " + props.classes : "SubmitType"}
+                type="submit"
+                value={props.value ? props.value : "Отправить"}
+            />
+        </div>
+
     )
 }
 

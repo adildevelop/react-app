@@ -4,30 +4,36 @@ import {useState} from "react";
 function InputType(props) {
     const [passVisible, setPassVisible] = useState(false);
 
+    function applyTheme() {
+        if (props.theme === "Light") return "Light";
+
+        return "";
+    }
+
     function renderInput() {
         if (props.type === "password") {
             return <input
-                className={props.classes ? "InputType " + props.classes : "InputType"}
+                className={props.classes ? "InputType " + applyTheme() + " " + props.classes : "InputType " + applyTheme()}
                 name={props.name}
                 type={passVisible ? "text" : "password"}
                 placeholder={props.placeholder ? props.placeholder : ""}
+                required={true}
             />;
         } else {
             return <input
-                className={props.classes ? "InputType " + props.classes : "InputType"}
+                className={props.classes ? "InputType " + applyTheme() + " " + props.classes : "InputType " + applyTheme()}
                 name={props.name}
                 type={props.type ? props.type : "text"}
                 placeholder={props.placeholder ? props.placeholder : ""}
+                required={true}
             />;
         }
     }
 
     function renderIcon() {
-        if (props.icon !== null) {
+        if (props.icon !== undefined) {
             return (
-                <div className="InputTypeIconWrapper">
-                    <img className="InputTypeIcon" src={props.icon} alt="Icon"/>
-                </div>
+                <img className="InputTypeIcon" src={props.icon} alt="Icon"/>
             );
         }
 
@@ -37,9 +43,7 @@ function InputType(props) {
     function renderShowPassIcon() {
         if (props.type === "password") {
             return (
-                <div className="InputTypeIconWrapper">
-                    <img className="InputTypeIcon" src={showPass} alt="Icon" onClick={hidePassword}/>
-                </div>
+                <img className="InputTypePassIcon" src={showPass} alt="Icon" onClick={hidePassword}/>
             );
         }
 
@@ -52,8 +56,8 @@ function InputType(props) {
 
     return (
         <div className="InputTypeContainer">
-            <label className="InputTypeLabel">{props.placeholder}</label>
-            <div className="InputTypeWrapper">
+            <label className={"InputTypeLabel " + applyTheme()}>{props.placeholder}</label>
+            <div className={"InputTypeWrapper " + applyTheme()}>
                 {renderIcon()}
                 {renderInput()}
                 {renderShowPassIcon()}

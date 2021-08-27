@@ -27,17 +27,29 @@ function Auth(props) {
                 localStorage.setItem("token", res.data.token);
                 localStorage.setItem("refreshToken", res.data.refreshToken);
 
-                history.push('/characters');
+                history.push("/characters");
             } else {
-                console.log(res);
+                document.querySelector(".AuthErrorWrapper").classList.add("Active");
             }
         }).catch(error => {
-            console.log(error);
+            document.querySelector(".AuthErrorWrapper").classList.add("Active");
         });
     }
 
+    function removeErrorBlock() {
+        document.querySelector(".AuthErrorWrapper").classList.remove("Active");
+    }
+
     return (
-        <div className="Auth">
+        <div className={"Auth " + applyTheme()}>
+            <div className="AuthErrorWrapper">
+                <div className="AuthErrorBackground" />
+                <div className={"AuthError " + applyTheme()}>
+                    <h3 className={applyTheme()}>Ошибка</h3>
+                    <p className={applyTheme()}>Введен неверный логин или пароль</p>
+                    <button onClick={removeErrorBlock}>Ок</button>
+                </div>
+            </div>
             <div className="AuthContainer">
                 <div className="AuthImage">
                     <img src={rick} alt="Rick" />
@@ -45,8 +57,8 @@ function Auth(props) {
                     <img src={morty} alt="Morty" />
                 </div>
                 <form className="AuthForm" onSubmit={handleSubmit}>
-                    <InputType icon={auth} name="login" placeholder="Логин" type="text" />
-                    <InputType icon={pass} name="password" placeholder="Пароль" type="password" />
+                    <InputType theme={props.theme} icon={auth} name="login" placeholder="Логин" type="text" />
+                    <InputType theme={props.theme} icon={pass} name="password" placeholder="Пароль" type="password" />
                     <SubmitType value="Войти"/>
                 </form>
                 <div className="AuthNoAccountContainer">
