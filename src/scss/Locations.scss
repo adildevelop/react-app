@@ -2,13 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
   background: $primary-color-dark;
-  color: $primary-font-color-dark;
 
   &.Light {
     background: $primary-color-light;
-    color: $primary-font-color-light;
   }
 }

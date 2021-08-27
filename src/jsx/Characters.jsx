@@ -1,5 +1,5 @@
 import SearchBar from "./Components/SearchBar";
-import CharacterList from "./CharacterList/CharacterList";
+import CharacterList from "./Characters/CharacterList";
 
 function Characters(props) {
     function applyTheme() {
@@ -10,7 +10,7 @@ function Characters(props) {
 
     return (
         <div className={"Characters " + applyTheme()}>
-            <SearchBar theme={props.theme} />
+            <SearchBar theme={props.theme} placeholder="Найти персонажа" />
             <CharacterList theme={props.theme} />
         </div>
     )

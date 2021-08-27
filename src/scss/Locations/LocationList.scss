@@ -1,0 +1,26 @@
+.LocationList {
+  width: calc(100% - 32px);
+
+  .LocationListHeader {
+    margin-bottom: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .LocationListTotal {
+      margin: 0;
+      font-size: $font-size-10;
+      color: $secondary-font-color-dark;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+
+      &.Light {
+        color: $secondary-font-color-light;
+      }
+    }
+  }
+
+  .LocationItemContainer {
+    margin-bottom: 80px;
+  }
+}

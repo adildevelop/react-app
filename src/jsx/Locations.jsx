@@ -1,3 +1,6 @@
+import SearchBar from "./Components/SearchBar";
+import LocationList from "./Locations/LocationList";
+
 function Locations(props) {
     function applyTheme() {
         if (props.theme === "Light") return "Light";
@@ -7,9 +10,8 @@ function Locations(props) {
 
     return (
         <div className={"Locations " + applyTheme()}>
-            <div className="Message">
-                Эта страница находится на стадии разработки.
-            </div>
+            <SearchBar theme={props.theme} placeholder="Найти локацию" />
+            <LocationList theme={props.theme} />
         </div>
     )
 }

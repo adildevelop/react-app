@@ -8,9 +8,9 @@ function SearchBar(props) {
     return (
         <div className={"SearchBar " + applyTheme()}>
             <button className="SearchButton" />
-            <input className={"SearchInput " + applyTheme()} type="text" placeholder="Найти персонажа" />
+            <input className={"SearchInput " + applyTheme()} type="text" placeholder={props.placeholder} />
             <div className="SearchFilterWrapper">
-                <div className={"SearchBar " + applyTheme()} />
+                <div className={"SearchDivider " + applyTheme()} />
                 <button className="SearchFilter" />
             </div>
         </div>

@@ -60,7 +60,7 @@ function CharacterItem(props) {
     return (
         <div className={"CharacterItem " + props.layout}>
             <div className={"CharacterImage " + props.layout}>
-                <img src={props.image} alt="MortyImage"/>
+                <img src={props.image} alt="CharacterImage"/>
             </div>
             <div className={"CharacterInfo " + props.layout}>
                 <div className={"CharacterStatus " + getStatusClass()}>{renderStatus()}</div>

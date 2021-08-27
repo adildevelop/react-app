@@ -16,8 +16,12 @@
 @import "scss/Components/Navigation";
 
 // Characters List
-@import "scss/CharacterList/CharacterList";
-@import "scss/CharacterList/CharacterItem";
+@import "scss/Characters/CharacterList";
+@import "scss/Characters/CharacterItem";
+
+// Locations List
+@import "scss/Locations/LocationList";
+@import "scss/Locations/LocationItem";
 
 // SettingsWindow
 @import "scss/Settings/SettingsWindows";
