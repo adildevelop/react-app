@@ -7,6 +7,9 @@ function Episodes(props) {
 
     return (
         <div className={"Episodes " + applyTheme()}>
+            <div className="Message">
+                Эта страница находится на стадии разработки.
+            </div>
         </div>
     )
 }

@@ -12,8 +12,12 @@ import Settings from "./jsx/Settings";
 
 function App() {
     const location = useLocation();
-    const [theme, setTheme] = useState("Dark");
+    const [theme, setTheme] = useState();
     const [showNav, setShowNav] = useState(true);
+
+    useEffect(() => {
+       setTheme(localStorage.getItem("theme") ?? "Dark");
+    }, [setTheme]);
 
     useEffect(() => {
        switch (location.pathname) {
@@ -29,12 +33,14 @@ function App() {
            default:
                setShowNav(true);
        }
-    });
+    }, [location, setShowNav]);
 
     function changeTheme() {
         if (theme === "Dark") {
-            setTheme("Light")
+            localStorage.setItem("theme", "Light");
+            setTheme("Light");
         } else {
+            localStorage.setItem("theme", "Dark");
             setTheme("Dark");
         }
     }

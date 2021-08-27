@@ -7,6 +7,9 @@ function Locations(props) {
 
     return (
         <div className={"Locations " + applyTheme()}>
+            <div className="Message">
+                Эта страница находится на стадии разработки.
+            </div>
         </div>
     )
 }
