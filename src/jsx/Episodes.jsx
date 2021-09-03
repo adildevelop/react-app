@@ -1,3 +1,6 @@
+import SearchBar from "./Components/SearchBar";
+import EpisodeList from "./Episodes/EpisodeList";
+
 function Episodes(props) {
     function applyTheme() {
         if (props.theme === "Light") return "Light";
@@ -7,9 +10,8 @@ function Episodes(props) {
 
     return (
         <div className={"Episodes " + applyTheme()}>
-            <div className="Message">
-                Эта страница находится на стадии разработки.
-            </div>
+            <SearchBar placeholder="Найти эпизод" filter={false} theme={props.theme}/>
+            <EpisodeList theme={props.theme}/>
         </div>
     )
 }

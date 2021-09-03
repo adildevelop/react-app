@@ -1,0 +1,16 @@
+.EpisodeList {
+  margin-bottom: 60px;
+  width: 100%;
+
+  .EpisodeTabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.EpisodeItem {
+  margin: 24px 0;
+  padding: 0 16px;
+  display: flex;
+
+  .EpisodeImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .EpisodeWrapper {
+    margin-left: 16px;
+
+    .EpisodeSeries {
+      margin: 0;
+      font-size: $font-size-10;
+      line-height: $secondary-line-height;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #22A2BD;
+    }
+
+    .EpisodeName {
+      margin: 0;
+      font-size: $font-size-16;
+      line-height: $primary-line-height;
+      letter-spacing: .5px;
+      color: $primary-font-color-dark;
+
+      &.Light {
+        color: $primary-font-color-light;
+      }
+    }
+
+    .EpisodePremiere {
+      margin: 0;
+      font-size: $font-size-14;
+      font-weight: $secondary-font-weight;
+      line-height: 20px;
+      letter-spacing: .25px;
+      color: $status-font-color;
+    }
+  }
+}
