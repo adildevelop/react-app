@@ -28,8 +28,12 @@
 @import "scss/Episodes/EpisodeTab";
 @import "scss/Episodes/EpisodeItem";
 
-// SettingsWindow
-@import "scss/Settings/SettingsWindows";
+// SettingsProfile
+@import "scss/Settings/SettingsProfile";
+@import "scss/Settings/SettingsTheme";
+@import "scss/Settings/SettingsAbout";
+@import "scss/Settings/SettingsVersion";
+@import "scss/Settings/ProfileEdit";
 
 @import "scss/Characters";
 @import "scss/Locations";

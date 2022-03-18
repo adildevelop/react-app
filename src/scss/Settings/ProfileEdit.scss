@@ -1,0 +1,30 @@
+.ProfileEdit {
+  width: calc(100% - 32px);
+
+  .ProfileEditHeader {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      margin: 0 0 0 20px;
+      font-weight: $primary-font-weight;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: .15px;
+      color: $primary-font-color-dark;
+    }
+
+    button {
+      padding: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

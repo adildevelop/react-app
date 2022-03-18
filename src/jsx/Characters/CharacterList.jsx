@@ -11,7 +11,7 @@ function CharacterList(props) {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        let url = 'http://173.249.20.184:7001/api/Characters/GetAll?PageNumber=1&PageSize=10';
+        let url = 'http://173.249.20.184:7001/api/Characters/GetAll?PageNumber=1&PageSize=100';
         loadCharacters(url);
     });
 

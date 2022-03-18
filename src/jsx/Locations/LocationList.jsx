@@ -7,7 +7,7 @@ function LocationList(props) {
     const [locations, setLocations] = useState([]);
 
     useEffect(() => {
-        let url = 'http://173.249.20.184:7001/api/Locations/GetAll?PageNumber=1&PageSize=10';
+        let url = 'http://173.249.20.184:7001/api/Locations/GetAll?PageNumber=1&PageSize=100';
         loadLocations(url);
     });
 

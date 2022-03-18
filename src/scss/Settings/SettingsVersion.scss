@@ -1,0 +1,28 @@
+.SettingsVersion {
+  width: calc(100% - 32px);
+
+  hr {
+    margin: 32px 0;
+    border: 1px solid #152A3A;
+  }
+
+  .SettingsVersionHeader {
+    margin: 0 0 24px 0;
+    font-weight: $primary-font-weight;
+    font-size: $font-size-10;
+    line-height: $secondary-line-height;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $secondary-font-color-dark;
+  }
+
+  .SettingsVersionText {
+    margin: 0;
+    font-weight: $secondary-font-weight;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: .25px;
+    color: $primary-font-color-dark;
+    word-break: break-all;
+  }
+}

@@ -1,4 +1,8 @@
-import SettingsWindow from "./Settings/SettingsWindow";
+import SettingsProfile from "./Settings/SettingsProfile";
+import SettingsTheme from "./Settings/SettingsTheme";
+import SettingsAbout from "./Settings/SettingsAbout";
+import SettingsVersion from "./Settings/SettingsVersion";
+import ProfileEdit from "./Settings/ProfileEdit";
 
 function Settings(props) {
     function applyTheme() {
@@ -9,7 +13,11 @@ function Settings(props) {
 
     return (
         <div className={"Settings " + applyTheme()}>
-            <SettingsWindow theme={props.theme} changeTheme={props.changeTheme}/>
+            {/*<SettingsProfile theme={props.theme} changeTheme={props.changeTheme}/>*/}
+            {/*<SettingsTheme theme={props.theme} />*/}
+            {/*<SettingsAbout />*/}
+            {/*<SettingsVersion />*/}
+            <ProfileEdit />
         </div>
     )
 }

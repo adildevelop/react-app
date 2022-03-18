@@ -8,7 +8,7 @@ function EpisodeList(props) {
     const [episodes, setEpisodes] = useState({'1': [], '2': [], '3': [], '4': []});
 
     useEffect(() => {
-        let url = 'http://173.249.20.184:7001/api/Episodes/GetAll?PageNumber=1&PageSize=100&season=1';
+        let url = 'http://173.249.20.184:7001/api/Episodes/GetAll?PageNumber=1&PageSize=100';
         loadEpisodes(url);
     });
 
